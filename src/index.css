@@ -1,0 +1,65 @@
+@import url('https://fonts.cdnfonts.com/css/racy');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 195 77% 95%;
+    --foreground: 198 77% 12%;
+    --muted: 195 77% 90%;
+    --muted-foreground: 198 77% 20%;
+    --popover: 195 77% 95%;
+    --popover-foreground: 198 77% 12%;
+    --border: 198 77% 85%;
+    --input: 198 77% 85%;
+    --card: 195 77% 95%;
+    --card-foreground: 198 77% 12%;
+    --primary: 198 77% 12%;
+    --primary-foreground: 195 77% 95%;
+    --secondary: 195 77% 90%;
+    --secondary-foreground: 198 77% 12%;
+    --accent: 195 77% 90%;
+    --accent-foreground: 198 77% 12%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 198 77% 70%;
+    --radius: 0.5rem;
+  }
+
+  :root[class~="dark"] {
+    --background: 198 77% 12%;
+    --foreground: 195 77% 95%;
+    --muted: 198 77% 20%;
+    --muted-foreground: 195 77% 85%;
+    --popover: 198 77% 12%;
+    --popover-foreground: 195 77% 95%;
+    --border: 198 77% 20%;
+    --input: 198 77% 20%;
+    --card: 198 77% 12%;
+    --card-foreground: 195 77% 95%;
+    --primary: 195 77% 95%;
+    --primary-foreground: 198 77% 12%;
+    --secondary: 198 77% 20%;
+    --secondary-foreground: 195 77% 95%;
+    --accent: 198 77% 20%;
+    --accent-foreground: 195 77% 95%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 198 77% 20%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Racy', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Racy', sans-serif;
+  }
+}
