@@ -2,6 +2,8 @@ import React from 'react';
 import { ArrowDown, Mail, MapPin, Phone, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Particles from './Particles';
+import heroImage from '../assets/hero_page.jpg';
+
 
 export const Hero = () => {
   return (
@@ -124,7 +126,7 @@ export const Hero = () => {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-primary/20 shadow-xl">
               <img 
-                src="././hero_page.jpg" 
+                src={heroImage}
                 alt="Profile" 
                 className="w-full h-full object-cover" 
               />
