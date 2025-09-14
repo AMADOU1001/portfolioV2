@@ -64,8 +64,7 @@ export const About = () => {
             </motion.p>
             <motion.p variants={item}>
               Passionné par l'innovation et la création de solutions
-              performantes, je souhaite rejoindre votre entreprise afin de mettre
-              mes compétences à votre service.
+              performantes.
             </motion.p>
           </div>
 
