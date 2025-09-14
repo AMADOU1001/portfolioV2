@@ -27,10 +27,10 @@ export const Hero = () => {
 
   // Fonction pour gérer le téléchargement du CV
   const handleCVDownload = () => {
-    const cvPath = '/AMADOUDIOULDE_BA_CV.pdf'; // Chemin depuis le dossier public
+    const cvPath = '/AMADOUDIOULDE_BA_CV(1).pdf'; // Chemin depuis le dossier public
     const link = document.createElement('a');
     link.href = cvPath;
-    link.download = 'AMADOUDIOULDE_BA_CV.pdf';
+    link.download = 'AMADOUDIOULDE_BA_CV(1).pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -69,7 +69,11 @@ export const Hero = () => {
                 className="text-primary"
               >
                 Amadou Dioulde BA
+
               </motion.span>
+              <p className="text-2xl  tracking-tight text-foreground/60 mb-4">
+                Passionné par la création de solutions innovantes
+              </p>
               <motion.div
                 initial={{
                   width: 0
@@ -106,7 +110,9 @@ export const Hero = () => {
                 className="font-semibold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent"
               >
                 {roles[currentRoleIndex]}
+
               </motion.p>
+
               <motion.span
                 animate={{
                   opacity: [1, 0, 1]
@@ -120,7 +126,9 @@ export const Hero = () => {
               >
                 |
               </motion.span>
+
             </div>
+
 
             <motion.div
               initial={{
@@ -144,7 +152,7 @@ export const Hero = () => {
                 className="flex items-center hover:text-primary transition-colors duration-300"
               >
                 <MapPin size={18} className="mr-2" />
-                <span>Dakar, Sénégal</span>
+                <span>16A Douglas St,Charlottetown,P-E-I</span>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -153,7 +161,7 @@ export const Hero = () => {
                 className="flex items-center hover:text-primary transition-colors duration-300"
               >
                 <Phone size={18} className="mr-2" />
-                <span>+221 70 905 00 50</span>
+                <span>(514) 977-3712</span>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
